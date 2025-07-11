@@ -1,0 +1,54 @@
+# Site
+title: Thomas Frost
+tagline: Clinician and machine learning researcher
+description: >-
+  Personal site of Dr Thomas Frost — Oxford-trained physician and PhD researcher
+  at UCL working on offline reinforcement learning for intensive care.
+url: "https://www.thomasfrost.io"
+baseurl: ""
+lang: en
+
+# Author / profile
+author:
+  name: Thomas Frost
+  email: thomas.frost.21@alumni.ucl.ac.uk
+  github: tdgfrost
+  linkedin: drthomasfrost
+  scholar: "https://scholar.google.com/citations?user=v7sjR-IAAAAJ&hl=en"
+  photo: /assets/img/profile.jpg
+  cv: /assets/Thomas_Frost_CV.pdf
+
+# Top-right navigation. Add or reorder entries here — nothing else to touch.
+nav:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Projects
+    url: /#projects
+  - title: Publications
+    url: /#publications
+
+# Build
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: /feed.xml
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
