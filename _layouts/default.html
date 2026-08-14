@@ -8,7 +8,7 @@
   {%- if page.title and page.url != "/" -%}
     <title>{{ page.title }} · {{ site.title }}</title>
   {%- else -%}
-    <title>{{ site.title }} — {{ site.tagline }}</title>
+    <title>{{ site.title }}</title>
   {%- endif -%}
 
   {%- assign desc = page.description | default: site.description | strip_newlines -%}
