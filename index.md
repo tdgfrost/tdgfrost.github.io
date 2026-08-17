@@ -12,7 +12,8 @@ title: Home
 
     <p>I'm a doctor and PhD researcher at <strong>University College London</strong>, where I work
     on offline reinforcement learning for intensive care. My thesis explores the real-time
-    optimisation of titratable drug infusions in the ICU using naturally timed data.</p>
+    optimisation of titratable drug infusions in the ICU using naturally timed data (<a href="https://www.talkrl.com/episodes/thomas-frost-on-clinical-rl-with-natural-timings">as featured
+    on TalkRL</a>).</p>
 
     <p>I trained in medicine at Oxford and have spent more than eight years working in the NHS in
     emergency medicine, first in Scotland and then in London. I still practice medicine and use my
@@ -65,6 +66,16 @@ an open-source MLOps platform for testing and deploying models inside clinical w
   </li>
 
   <li class="entry">
+    <p class="entry-title">Insulin4RL: Real-time insulin infusions for offline reinforcement learning</p>
+    <p class="entry-meta">Open-source dataset · PhysioNet, 2026</p>
+    <p class="entry-desc">My freely available dataset of real-time insulin infusions in intensive
+    care, intended for offline reinforcement learning with naturally timed data.</p>
+    <p class="entry-links">
+      <a href="https://doi.org/10.13026/swen-q904">Dataset</a>
+    </p>
+  </li>
+
+  <li class="entry">
     <p class="entry-title">FlowEHR</p>
     <p class="entry-meta">Contributor · Microsoft &amp; UCLH</p>
     <p class="entry-desc">Open-source MLOps platform for secure model development and deployment
@@ -75,30 +86,11 @@ an open-source MLOps platform for testing and deploying models inside clinical w
     </p>
   </li>
 
-  <li class="entry">
-    <p class="entry-title">Clinical evaluation of LLM discharge summaries</p>
-    <p class="entry-meta">Expert evaluator</p>
-    <p class="entry-desc">Served as a clinical evaluator for LLM-generated discharge summaries,
-    assessing the quality and impact of the written work including the potential effects of
-    different types of hallucinations.</p>
-    <p class="entry-links">
-      <!-- <a href="">Write-up</a> -->
-    </p>
-  </li>
-
 </ul>
 
 <h2 id="publications">Selected publications</h2>
 
 <ul class="entry-list">
-
-  <li class="entry">
-    <p class="entry-title">Insulin4RL: Real-time insulin infusions for offline reinforcement learning</p>
-    <p class="entry-meta">Frost, T., &amp; Harris, S. — PhysioNet, 2026</p>
-    <p class="entry-links">
-      <a href="https://doi.org/10.13026/swen-q904">Dataset</a>
-    </p>
-  </li>
 
   <li class="entry">
     <p class="entry-title">Insulin4RL: Real-time insulin management in the intensive care unit for offline reinforcement learning</p>
