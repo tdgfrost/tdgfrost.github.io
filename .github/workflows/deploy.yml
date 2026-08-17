@@ -10,9 +10,12 @@ permissions:
   pages: write
   id-token: write
 
+# Allow one concurrent deployment. Do NOT cancel in-progress runs: a cancelled
+# run leaves the previously deployed site live, so rapid pushes would otherwise
+# silently discard the newest build.
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
