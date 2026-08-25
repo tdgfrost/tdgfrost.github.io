@@ -30,6 +30,15 @@ jobs:
           ruby-version: "3.3"
           bundler-cache: true
 
+      # Posts in _typst/ are compiled to HTML by _plugins/typst.rb during the
+      # Jekyll build, so the typst binary has to be on PATH before it runs.
+      # Pinned deliberately: Typst's HTML export is still in development and
+      # its output can change between releases.
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+        with:
+          typst-version: "0.14.2"
+
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v6

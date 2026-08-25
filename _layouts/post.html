@@ -1,13 +1,23 @@
 ---
 layout: default
 ---
-{%- assign post_desc = page.description | default: page.subtitle -%}
+{%- comment -%}
+  The post page prefers `subtitle`; `description` (which the blog index and the
+  meta tag use) is the fallback, so one value still covers both by default.
+  An explicit empty `subtitle` suppresses the line entirely.
+{%- endcomment -%}
+{%- if page.subtitle -%}
+  {%- assign post_desc = page.subtitle -%}
+{%- else -%}
+  {%- assign post_desc = page.description -%}
+{%- endif -%}
+{%- assign post_desc = post_desc | default: "" | strip -%}
 <article class="post">
   <h1 class="page-title">{{ page.title }}</h1>
   <p class="post-meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
   </p>
-  {%- if post_desc %}<p class="post-subtitle">{{ post_desc }}</p>{% endif -%}
+  {%- if post_desc != "" %}<p class="post-subtitle">{{ post_desc }}</p>{% endif -%}
 
   {{ content }}
 

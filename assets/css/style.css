@@ -228,6 +228,35 @@ th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var
   margin: -1.5rem 0 2rem;
 }
 
+/* ---------- typst ---------- */
+/* Maths from Typst posts arrives as inline SVG (see _plugins/typst.rb). The
+   glyph fills are rewritten to currentColor, so it inherits the text colour. */
+.typst-inline {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.typst-inline svg { vertical-align: baseline; }
+
+.typst-block {
+  margin: 1.75rem 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.post figure { margin: 2rem 0; text-align: center; }
+.post figure img { max-width: 100%; height: auto; }
+.post figcaption {
+  color: var(--text-soft);
+  font-size: 0.9375rem;
+  margin-top: 0.6rem;
+}
+.post table { border-collapse: collapse; margin: 1.5rem 0; }
+.post table td, .post table th {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.4rem 0.9rem 0.4rem 0;
+  text-align: left;
+}
+
 .post-list .entry { display: flex; gap: 1.25rem; align-items: baseline; }
 .post-list .entry-date {
   flex: 0 0 6.5rem;
