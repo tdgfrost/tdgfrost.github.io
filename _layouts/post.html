@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
+{%- assign post_desc = page.description | default: page.subtitle -%}
 <article class="post">
   <h1 class="page-title">{{ page.title }}</h1>
   <p class="post-meta">
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
   </p>
+  {%- if post_desc %}<p class="post-subtitle">{{ post_desc }}</p>{% endif -%}
 
   {{ content }}
 

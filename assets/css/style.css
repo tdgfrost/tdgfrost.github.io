@@ -222,6 +222,12 @@ th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var
   margin: -0.75rem 0 2rem;
 }
 
+.post-subtitle {
+  color: var(--text-soft);
+  font-size: 1.0625rem;
+  margin: -1.5rem 0 2rem;
+}
+
 .post-list .entry { display: flex; gap: 1.25rem; align-items: baseline; }
 .post-list .entry-date {
   flex: 0 0 6.5rem;

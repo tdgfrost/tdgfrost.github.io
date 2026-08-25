@@ -36,6 +36,18 @@ kramdown:
   syntax_highlighter: rouge
 permalink: /blog/:year/:month/:day/:title/
 
+# Show posts whose date is in the future rather than silently dropping them.
+future: true
+
+# Anything dropped into _posts automatically gets the post layout, so a new
+# markdown file needs no front matter beyond (optionally) a title.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
